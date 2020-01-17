@@ -16,11 +16,13 @@ You can download Java 8 [here](https://www.oracle.com/technetwork/java/javase/do
 
 Note that in order to download, you will need to create an Oracle account. Don't worry, Oracle will not spam you, but they might send occasional emails letting you know about updates to the version of Java that you've installed.
 
-Once the installer is is downloaded, using it should be as simple as following the instructions. Leave any options presented during the installation process in their default state unless you know what you're doing!
+The terms SDK and JDK stand for "Software Development Kit" and "Java Developmebnt Kit" respectively. They will be used interchangeably for the rest of this lab.
+
+Once the installer is downloaded, using it should be as simple as following the instructions. Leave any options presented during the installation process in their default state unless you know what you're doing!
 
 Once you've installed, verify that your installation was done correctly: 
 
-1. Open the terminal / command prompt / whatever your OS calls the command-line interface.
+1. Open the terminal / command prompt / whatever your operating system (OS) calls the command-line interface.
 2. Type `java -version`.
 3. If the resulting message tells you what version of Java you have installed, success! If it instead says something along the lines of `unrecognized command "java"`, **panic**. Nah, just try to install again and ask for help if you keep having trouble, or use this as an opportunity to practice the programmer's most valuable skill: use of the search engine to solve technical problems.
 
@@ -194,7 +196,7 @@ Make sure that **Java** is selected in the top left.
 
 In the top-right, select **New...**
 
-Here, you'll need to find the installation Java SDK that you installed earlier. On Mac, the default path to the JDK is
+Here, you'll need to find the Java SDK that you installed earlier. On Mac, the default path to the JDK is
 
 ```
 /Library/Java/JavaVirtualMachines/jdk<version>.jdk
@@ -212,7 +214,7 @@ Here is where you get to name the project and choose where to put it on your com
 
 Now, in IntelliJ, click the **...** to the right of the **Project location:** field. In the dialog that pops up, go to your desktop and select the folder you just created.
 
-We want this specfic project to have it's own folder, so it will be separate from the other project we put in the `COMP_150_Projects` folder later on. Add `/HelloWorld` to the end of the **Project location:** field. Finally, type **HelloWorld** in the **Project name:** field. It should look like this:
+We want this specfic project to have it's own folder, so it will be separate from the other projects we put in the `COMP_150_Projects` folder later on. Add `/HelloWorld` to the end of the **Project location:** field. Finally, type **HelloWorld** in the **Project name:** field. It should look like this:
 
 ![Project Name Location 2](./figures/projectNameLocation2.png)
 
@@ -250,11 +252,11 @@ Your IntelliJ screen should now look like this:
 
 ![New Class](./figures/newClass.png)
 
-We've now created a new file, called HelloWorld.java, in the src folder. IntelliJ doesn't display the ".java" portion of the file name in the project pane; it instead indicates that HelloWorld is a Java file containing a Class definition with the `C` in a blue circle.
+We've now created a new file, called **HelloWorld.java**, in the src folder. IntelliJ doesn't display the ".java" portion of the file name in the project pane; it instead indicates that HelloWorld is a Java file containing a Class definition with the `C` in a blue circle to the left of the file name.
 
-HelloWorld.java has also been opened in an editor tab, to the right, and a class called HelloWorld with no contents has been created.
+**HelloWorld.java** has also been opened in an editor tab, to the right, and a class called HelloWorld with no contents has been created.
 
-We're going to give this class the contents very similar to those that we gave HelloWorld.java in our earlier project.
+We're going to give this class contents very similar to those that we gave **HelloWorld.java** in our earlier project.
 
 The class declaration is already made. We need to add a main method. Recall in the previous project we did this with the line `public static void main (String[] args)` followed by curly braces `{}` containing the contents of the main.
 
@@ -304,7 +306,7 @@ An exit code with **any number other than 0** means that an error occurred while
 
 ## Task 7 - Explore Errors
 
-When you are writing programs, you will make mistakes. More runs will be unsuccessful than successful while you're developing. This will be true no matter how long you keep programming; you'll get more comfortable in smaller systems and move into larger ones where there is more room to make mistakes. When errors exist in your code, it does not mean you're a bad programmer. Moreover, **programming is not a fragile task**. When you write a program and run it and it crashes, **there are no consequences**. Even in industry, where faulty code can have terrible consequences (say, accidentally deleting the contents of a database), you will rigorously test your code in a safe environment (with copies of the database) to make sure it's perfect before ever using it in real life. So, **don't be afraid to experiment and make mistakes**.
+When you are writing programs, you will make mistakes. More runs will be unsuccessful than successful while you're developing. This will be true no matter how long you keep programming; you'll get more comfortable in smaller systems and move into larger ones where it is harder not to make mistakes. When errors exist in your code, it does not mean you're a bad programmer. Moreover, **programming is not a fragile task**. When you write a program and run it and it crashes, **there are no consequences**. Even in industry, where faulty code can have terrible consequences (say, accidentally deleting the contents of a database), you will rigorously test your code in a safe environment (with copies of the database) to make sure it's perfect before ever using it live. So, **don't be afraid to experiment and make mistakes**.
 
 We've now successfully compiled and run the program. Let's explore what happens when the program either can't compile or can't run.
 
@@ -344,11 +346,11 @@ public class HelloWorld {
 }
 ```
 
-What does this new script do? Well, first there is the line `int x = 0`. This line creates a variable named `x`, of type `int`, and gives it value `1`. `int` is short for "integer"; `x` is essentially a box in which we can put an integer value, and we've chosen to put a `1` in that box.
+What does this new script do? Well, first there is the statement `int x = 0;`. This statement creates a variable named `x`, of type `int`, and gives it value `1`. `int` is short for "integer"; `x` is essentially a box in which we can put an integer value, and we've chosen to put a `1` in that box.
 
 Next, we create a second `int`, called `y`, and assign its value to be `0`.
 
-Finally, we try to print out `x / y`. This means, print out the result of dividing `x` by `y`. But, since `y` is 0, this division will not be carried out successfully.
+Finally, we try to print out `x / y`. This means, print out the result of dividing `x` by `y`. But, since `y`'s value is `0`, this division will not be carried out successfully.
 
 The lines in this file are syntactically correct (they have correct "grammar"; they form understandable statements). So, the program will compile correctly. Verify that the program builds correctly by using the **Build** menu to compile again.
 
@@ -377,7 +379,7 @@ The type of error was an `ArithmeticException` (i.e. a numerical calculation wen
 
 `at HelloWorld.main(HelloWorld.java:5)`: the error occurred in the method called `main` defined in the `HelloWorld` executable in the file `HelloWorld.java`, on the `5`'th. It may seem redundant that it specifies both the `HelloWorld` executable and the file `HelloWorld.java`, but most projects consist of more than one file, so in general this extra information is helpful.
 
-It is important to understand the difference between **compilation errors**, where the project can't be compiled / built, and **runtime errors**, where something goes wrong while the program is running. Being able to determine which type of error is occurring and to read the error messages to determine what is wrong is the among the first skills you'll need to build to being a successful programmer.
+It is important to understand the difference between **compilation errors**, where the project can't be compiled / built, and **runtime errors**, where something goes wrong while the program is running. Being able to determine which type of error is occurring and to read the error messages to determine what is wrong is the among the first skills you'll need to build in order to be a successful programmer.
 
 Whenever you get an error, **you should try to fix it yourself** by reading the messages and, if necessary, searching the internet for explanations from others who have had similar problems. You should only ask for help with an error after you've put in an honest effort to figure out what is wrong on your own. **This is not because I don't want to help you**, but because **figuring out what is wrong by interpreting error messages and researching the problem is integral to being a successful programmer**. It is a skill that you will never stop using and that you will never stop improving.
 
@@ -391,7 +393,7 @@ When you're ready to submit, zip up your project and submit it on Canvas under L
 
 If you've never created a zip file before, don't worry, its easy.
 
-If you're on Mac, simply open your **COMP\_150\_Projects** folder, right click the **HelloWorld** folder, and click **Compress "HelloWorld"**. Note taht the names of the folders will be different if you named yours differently than I did mine earlier in the tutorial, but the idea is the same. The result should be a folder named **HelloWorld.zip**, which is what you should submit.
+If you're on Mac, simply open your **COMP\_150\_Projects** folder, right click the **HelloWorld** folder, and click **Compress "HelloWorld"**. Note that the names of the folders will be different if you named yours differently than I did mine earlier in the tutorial, but the idea is the same. The result should be a folder named **HelloWorld.zip**, which is what you should submit.
 
 If you're on an OS other than Mac, you may have to download a tool that allows you to zip up your project (or you might not, it depends on your OS and what version of that OS). Search "how to zip on \<your_OS\>" and go from there.
 

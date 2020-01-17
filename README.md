@@ -367,15 +367,19 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 	at HelloWorld.main(HelloWorld.java:5)
 ```
 
-Let's dissect this message the error message:
+Let's dissect the error message:
 
-`Exception in thread "main" java.lang.ArithmeticException:` means "there was a runtime error while running the thread called "main" of the program." Don't worry about what "thread" means for now. Moreover, the type of error was an `ArithmeticException` (i.e. a numerical calculation error), which is defined in the `java.lang` package (we'll talk about packages later on).
+`Exception in thread "main" java.lang.ArithmeticException:` means "there was a runtime error while running the thread called "main" of the program." (Don't worry about what "thread" means for now). 
+
+The type of error was an `ArithmeticException` (i.e. a numerical calculation went wrong), which is defined in the `java.lang` package (we'll talk about packages later on).
 
 `/ by zero` provides more detail about what the actual problem was: the program attempted to divide by zero.
 
-`at HelloWorld.main(HelloWorld.java:5)`: the error occured in the method called `main` defined in the `HelloWorld` executable in the file `HelloWorld.java`, on line `5`.
+`at HelloWorld.main(HelloWorld.java:5)`: the error occurred in the method called `main` defined in the `HelloWorld` executable in the file `HelloWorld.java`, on the `5`'th. It may seem redundant that it specifies both the `HelloWorld` executable and the file `HelloWorld.java`, but most projects consist of more than one file, so in general this extra information is helpful.
 
-It is important to understand the difference between **compilation errors**, where the project can't be compiled / built, and **runtime errors**, where something goes wrong while the program is running. Being able to determine which type of error is occuring and to read the error messages to determine what is wrong is the first integral skill to being a successful programmer. Whenever you get an error, you should **try to fix it yourself** by reading the messages and, if necessary, searching the internet for explanations from others who have had similar problems. You should only ask for help with an error after you've put in an honest effort to figure out what is wrong on your own. **This is not because I don't want to help you**, but because **figuring out what is wrong by interpreting error messages and researching the problem is integral to being a successful programmer**. It is a skill that you will never stop using and that you will never stop improving.
+It is important to understand the difference between **compilation errors**, where the project can't be compiled / built, and **runtime errors**, where something goes wrong while the program is running. Being able to determine which type of error is occurring and to read the error messages to determine what is wrong is the among the first skills you'll need to build to being a successful programmer.
+
+Whenever you get an error, **you should try to fix it yourself** by reading the messages and, if necessary, searching the internet for explanations from others who have had similar problems. You should only ask for help with an error after you've put in an honest effort to figure out what is wrong on your own. **This is not because I don't want to help you**, but because **figuring out what is wrong by interpreting error messages and researching the problem is integral to being a successful programmer**. It is a skill that you will never stop using and that you will never stop improving.
 
 ## Task 8 - Fix the Exception
 
@@ -387,7 +391,7 @@ When you're ready to submit, zip up your project and submit it on Canvas under L
 
 If you've never created a zip file before, don't worry, its easy.
 
-If you're on Mac, simply open your **COMP_150_Projects** folder, right click the **HelloWorld** folder, and click **Compress "HelloWorld"**. Note taht the names of the folders will be different if you named yours differently than I did mine earlier in the tutorial, but the idea is the same. The result should be a folder named **HelloWorld.zip**, which is what you should submit.
+If you're on Mac, simply open your **COMP\_150\_Projects** folder, right click the **HelloWorld** folder, and click **Compress "HelloWorld"**. Note taht the names of the folders will be different if you named yours differently than I did mine earlier in the tutorial, but the idea is the same. The result should be a folder named **HelloWorld.zip**, which is what you should submit.
 
 If you're on an OS other than Mac, you may have to download a tool that allows you to zip up your project (or you might not, it depends on your OS and what version of that OS). Search "how to zip on \<your_OS\>" and go from there.
 

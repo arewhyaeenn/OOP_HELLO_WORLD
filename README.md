@@ -7,6 +7,7 @@ In this lab, you will:
 * Compile and run your program in the command line.
 * Install an Integrated Development Environment (IDE) for developing in Java.
 * Rewrite and rerun your program using the IDE.
+* Explore compiler and run time errors.
 
 ## Task 1 - Install Java 8
 

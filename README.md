@@ -1,4 +1,4 @@
-# COMP 150 Lab 1 - Hello World
+# Object-Oriented Programming - Hello World
 
 In this lab, you will:
 

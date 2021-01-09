@@ -167,7 +167,7 @@ Congratulations! You've created, written, compiled and run a Java program!
 
 ## Task 5 - Install IntelliJ IDEA
 
-An Integrade Development Environment (IDE) is an application to make editing and testing code easier. As gratifying as it can be to do everything in the command line, nobody has time for that.
+An Integrated Development Environment (IDE) is an application to make editing and testing code easier. As gratifying as it can be to do everything in the command line, nobody has time for that.
 
 IntelliJ IDEA is an IDE made by JetBrains specifically for editing and testing Java projects. It isn't normally free, but students can get it free for a year, every year, until they graduate.
 

@@ -378,7 +378,7 @@ The type of error was an `ArithmeticException` (i.e. a numerical calculation wen
 
 `/ by zero` provides more detail about what the actual problem was: the program attempted to divide by zero.
 
-`at HelloWorld.main(HelloWorld.java:5)`: the error occurred in the method called `main` defined in the `HelloWorld` executable in the file `HelloWorld.java`, on the `5`'th. It may seem redundant that it specifies both the `HelloWorld` executable and the file `HelloWorld.java`, but most projects consist of more than one file, so in general this extra information is helpful.
+`at HelloWorld.main(HelloWorld.java:5)`: the error occurred in the method called `main` defined in the `HelloWorld` executable in the file `HelloWorld.java`, on the `5`'th line. It may seem redundant that it specifies both the `HelloWorld` executable and the file `HelloWorld.java`, but most projects consist of more than one file, so in general this extra information is helpful.
 
 It is important to understand the difference between **compilation errors**, where the project can't be compiled / built, and **runtime errors**, where something goes wrong while the program is running. Being able to determine which type of error is occurring and to read the error messages to determine what is wrong is the among the first skills you'll need to build in order to be a successful programmer.
 

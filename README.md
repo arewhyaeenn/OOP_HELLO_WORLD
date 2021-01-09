@@ -143,7 +143,7 @@ So, this program should print the message "Hello World!" in the terminal if we r
 
 Unfortunately, we can't just run this program right off the bat. It is written in Java, a human-readable language. We need to **compile** it, i.e. translate it into instructions that are much less readable to use humans but that our computers can follow.
 
-Don't worry, we don't have to perform this translation ourselves. The Java Virtual Machine will compile for us!
+Don't worry, we don't have to perform this translation ourselves. There are tools in the JDK to compile it for us!
 
 Save your file and close it. In the terminal, type the command:
 

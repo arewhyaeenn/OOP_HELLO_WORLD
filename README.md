@@ -211,7 +211,7 @@ Skip the next screen; hit **Next** in the bottom right a second time. You should
 
 ![Project Name Location](./figures/projectNameLocation.png)
 
-Here is where you get to name the project and choose where to put it on your computer. You likely want to put this project (and your future projects for this class) in the same place. On your desktop, right click and create a new folder name `COMP_150_Projects`.
+Here is where you get to name the project and choose where to put it on your computer. You likely want to put this project (and your future projects for this class) in the same place. On your desktop, right click and create a new folder named `COMP_150_Projects`.
 
 Now, in IntelliJ, click the **...** to the right of the **Project location:** field. In the dialog that pops up, go to your desktop and select the folder you just created.
 

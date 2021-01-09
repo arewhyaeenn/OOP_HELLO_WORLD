@@ -17,7 +17,7 @@ You can download Java 8 [here](https://www.oracle.com/technetwork/java/javase/do
 
 Note that in order to download, you will need to create an Oracle account. Don't worry, Oracle will not spam you, but they might send occasional emails letting you know about updates to the version of Java that you've installed.
 
-The terms SDK and JDK stand for "Software Development Kit" and "Java Developmebnt Kit" respectively. They will be used interchangeably for the rest of this lab.
+The terms SDK and JDK stand for "Software Development Kit" and "Java Development Kit" respectively. They will be used interchangeably for the rest of this lab.
 
 Once the installer is downloaded, using it should be as simple as following the instructions. Leave any options presented during the installation process in their default state unless you know what you're doing!
 
